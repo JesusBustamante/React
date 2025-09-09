@@ -1,0 +1,97 @@
+$primary: pink;
+$fondo-card: #131517;
+$borde-card: #33343c;
+$bottom-color: #421d22;
+
+.cards_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card {
+    width: 18%;
+    height: 60vh;
+    border-radius: 1vw;
+    border: 0.1vw solid $borde-card;
+    background: radial-gradient(125% 125% at 50% 10%, $fondo-card 40%, $bottom-color 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spider {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card_info {
+    margin-bottom: 1vw;
+    width: 90%;
+    height: 15%;
+    border-radius: 1vw;
+    background: $fondo-card;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0.5vw;
+}
+
+.estatura {
+    margin-left: 1vw;
+    border-top: 0.1vw solid $bottom-color;
+    border-top-right-radius: 2vw;
+    padding: 0.8vw;
+    font-size: 1vw;
+}
+
+.edad {
+    margin-right: 1vw;
+    border-top: 0.1vw solid $bottom-color;
+    border-top-left-radius: 2vw;
+    padding: 0.8vw;
+    font-size: 1vw;
+}
+
+.card_logo_container {
+    width: 25%;
+    border-bottom: 0.1vw solid $bottom-color;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    background: $bottom-color;
+    margin-bottom: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_logo {
+    width: 100%;
+}
+
+.card_name {
+    width: 90%;
+    height: 10%;
+    margin-top: 0.5vw;
+    background: radial-gradient(125% 125% at 50% 10%, $fondo-card 40%, $bottom-color 100%);
+    border-bottom: 0.1vw solid $bottom-color;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
